@@ -5,28 +5,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Coding Quiz</title>
         <link rel="stylesheet" type="text/css" href="./assets/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
     </head>
     <body>
         <div><a href="highscore.html">Highscores!</a></div>
 
-        <div>Time Remaining: <span>0</span></div>
+        <div>Time Remaining: <span id="time-remaining">0</span></div>
 
         <section>
             <div>
-                <div>
+                <div class="home-page">
                     <h1>Coding Quiz!</h1>
                     <p>Answer the following questions in the time limit! Each incorrect answer will deduct 10 secodns from your score. Be the high score!</p>
+                    <button>Start Quiz Now!</button>
                 </div>
 
-                <div>
-                    
+                <div id="quiz-questions" class="hide">
+                    <h2 id="question"></h2>
+                    <div id="answers-choices"></div>
                 </div>
 
-                <div>
+                <div id="score-screen" class="hide">
+                    <h1>All questions answered!</h1>
+                    <p>You score: <span id="final-time"></span>.</p>
 
+                    <div>
+                        Enter your initials <input type="text" id="initials" max="3"/>
+                        <button>Submit</button>
+                    </div>
                 </div>
             </div>
         </section>
-    <script src="./assets/script.js"></script>  
+    <script src="./assets/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </body>
 </html>
