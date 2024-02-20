@@ -4,35 +4,37 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Coding Quiz</title>
-        <link rel="stylesheet" type="text/css" href="./assets/style.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     </head>
-    <body>
-        <div><a href="highscore.html">Highscores!</a></div>
+    <body class="blue-grey lighten-3">
+        <div><a class="btn-large waves-effect waves-light red" href="highscore.html">Highscores!</a></div>
 
-        <div>Time Remaining: <span id="time-remaining">0</span></div>
+        <div class="center-align">Time Remaining: <span id="time-remaining">75</span></div>
 
-        <section>
-            <div>
-                <div class="home-page">
-                    <h1>Coding Quiz!</h1>
-                    <p>Answer the following questions in the time limit! Each incorrect answer will deduct 10 seconds from your score. Be the high score!</p>
-                    <button id="start-button">Start Quiz Now!</button>
+        <section class="container">
+            <div class="card blue-grey darken-1">
+                <div class="home-page card-content white-text">
+                    <h1 class="center-align">Coding Quiz!</h1>
+                    <p class="center-align">Answer the following questions in the time limit! Each incorrect answer will deduct 10 seconds from your score. Be the high score!</p>
+                    <button id="start-button" class="card-action hoverable center-align white-text">Start Quiz Now!</button>
                 </div>
 
                 <div id="quiz-questions" class="hide">
-                    <h2 id="question"></h2>
-                    <div id="answers-choices"></div>
+                    <h2 id="question" class="center-align white-text"></h2>
+                    <div id="answer-choices" class="card-action center-align"></div>
                 </div>
 
                 <div id="score-screen" class="hide">
-                    <h1>All questions answered!</h1>
-                    <p>You score: <span id="final-time"></span>.</p>
+                    <h1 class="center-align white-text">All questions answered!</h1>
+                    <p class="center-align white-text">You score: <span id="final-time"></span>.</p>
 
-                    <div>
-                        Enter your initials <input type="text" id="initials" max="3"/>
-                        <button id="save-button">Submit</button>
+                    <div class="center-align">
+                        Enter your initials 
+                        <div class="input-field inline">
+                            <input type="text" id="initials" max="3"/>
+                        </div>
+                        <button id="save-button" class="hoverable">Submit</button>
                     </div>
                 </div>
             </div>

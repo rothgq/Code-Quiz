@@ -4,20 +4,20 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Coding Quiz</title>
-        <link rel="stylesheet" type="text/css" href="./assets/style.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     </head>
 
-    <body>
-        <section>
-            <div>
-                <h1>Highscores!</h1>
-                <ol></ol>
+    <body class="blue-grey lighten-3">
+        <div><a class="btn-large waves-effect waves-light red" href="index.html">Back</a></div>
+        <section class="container">
+            <div class="card blue-grey darken-1">
+                <h1 class="white-text center-align">Highscores!</h1>
+                <ol id="scores" class="white-text"></ol>
+                <button id="clear-button" class="card-action hoverable center-align white-text">Clear all Highscores</button>
             </div>
-            <a href="index.html"><button>Back</button></a>
+            
         </section>
-        
-        <script src="./assets/script.js"></script>
+        <script src="./assets/highscore.js"></script>
     </body>
 </html>
